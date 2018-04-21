@@ -5,3 +5,5 @@ Register and login to create/edit your own articles under 'Dashboard' tab.
 
 Everyone can review articles from 'Articles' tab.
 
+Deployed on heroku https://flask-article.herokuapp.com/
+
