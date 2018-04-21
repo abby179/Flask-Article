@@ -5,7 +5,7 @@ from flask_login import UserMixin
 from peewee import *
 
 
-DATABASE = MySQLDatabase('articles', user='root', passwd='pass12345')
+DATABASE = MySQLDatabase('heroku_a29477c67a930cc', user='bed8bf4465c7c1', passwd='e8920cbb', host='eu-cdbr-west-02.cleardb.net')
 
 
 class Article(Model):
