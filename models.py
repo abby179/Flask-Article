@@ -41,30 +41,3 @@ def initialize():
     DATABASE.connect()
     DATABASE.create_tables([Article, User], safe=True)
     DATABASE.close()
-
-
-# Articles = [
-#     {
-#         'id': 1,
-#         'title': 'Article One',
-#         'body': 'Article One Body',
-#         'author': 'Yaxi Zhang',
-#         'create_date': '01-21-2018'
-#     },
-#     {
-#         'id': 2,
-#         'title': 'Article Two',
-#         'body': 'Article Two Body',
-#         'author': 'Yaxi Zhang',
-#         'create_date': '01-21-2018'
-#     },
-#     {
-#         'id': 3,
-#         'title': 'Article Three',
-#         'body': 'Article Three Body',
-#         'author': 'Yaxi Zhang',
-#         'create_date': '01-21-2018'
-#     },
-# ]
-
-
