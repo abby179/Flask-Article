@@ -1,0 +1,11 @@
+{% extends 'layout.html' %}
+{% block body %}
+    <div class="jumbotron text-center">
+        <h1>Welcome to my Flask App</h1>
+        <p class="lead">This is an application build on the Python Flask Framework. You can create and review articles here.</p>
+        {% if not current_user.is_authenticated %}
+            <a href="{{ url_for('register') }}" class="btn btn-primary btn-lg">Register</a>
+            <a href="{{ url_for('login') }}" class="btn btn-success btn-lg">Login</a>
+        {% endif %}
+    </div>
+{% endblock %}
