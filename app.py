@@ -101,7 +101,7 @@ def logout():
 @app.route('/dashboard')
 @login_required
 def dashboard():
-    articles = models.Article.select()
+    articles = models.Article.select().where(models.Article.author == current_user.username)
     if articles:
         return render_template('dashboard.html', articles=articles)
     else:
